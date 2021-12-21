@@ -28,5 +28,9 @@ This label has view state disabled. When the increment button is clicked, it wil
 Since no view state is sent for this control, therefore in the first thing server will do (InitializeComponents) will be to initialize this variable by the Text="0" (as specified in the code).
 And then the event (Increment Button Clicked) is raised. So it will add 1 to 0 and then assign it back to the label.
 
+### Project Structure
+The main file of this project is [FirstPage.aspx](/FirstPage.aspx). It consists of **code declaration block** and **page render block**. There is 
+no separate code-behind file.
+
 ##### References
 1. Stephen Walther et al, ASP.NET 4 Unleashed, First Printing, September 2010.
