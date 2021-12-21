@@ -29,7 +29,7 @@ Since no view state is sent for this control, therefore in the first thing serve
 And then the event (Increment Button Clicked) is raised. So it will add 1 to 0 and then assign it back to the label.
 
 ### Project Structure
-The main file of this project is [FirstPage.aspx](/FirstPage.aspx). It consists of **code declaration block** and **page render block**. There is 
+The main file of this project is [FirstPage.aspx](FirstPage.aspx). It consists of **code declaration block** and **page render block**. There is 
 no separate code-behind file.
 
 ##### References
