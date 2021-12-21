@@ -1,6 +1,5 @@
 ﻿<%@ Page Language="C#" %>
 
-<%@ Import Namespace="System.Net.Mail" %>
 <script runat="server">
     static int count = 0;
 
