@@ -13,12 +13,12 @@
                 Literal Text, Literal Control and the Label Control
             </asp:Label>
             <div>
-                Each HTML control not using the runat="server" attribute and each text appearing without any tags is considered as Literal Control.
-                For example the title of this html document is actually treated as a Literal Text (LiteralControl is the .NET class handling Literal Texts).
+                Each HTML control not using the runat="server" attribute and each text appearing without any tags is considered as Literal Control and Literal Text respectively.
+                For example the title of this html document will be treated as a Literal Text if not wrapped inside Literal Control, otherwise it is a LiteralControl.
                 <br /><br />
                 <asp:Literal runat="server" Mode="Encode">
                     <b>Literal Control with Encode Mode</b><br />
-                    On the other hand Literal Control is again the same thing as Literal Text with one property that it can dynamically modify the text.
+                    On the other hand Literal Control can dynamically modify the text.
                     For example, in this file, the title element has a Literal Control, and the text is assigned to it dynamically in the Code Behind File
                     (in the Page_Load method).
                     However, Literal Control is rendered in the same manner as Literal Text (Non Server side html text and elements), i.e. without any 
@@ -27,7 +27,7 @@
                 </asp:Literal><br /><br />
                 <asp:Literal runat="server" Mode="PassThrough">
                     <b>Literal Control with PassThrough Mode</b><br />
-                    On the other hand Literal Control is again the same thing as Literal Text with one property that it can dynamically modify the text.
+                    On the other hand Literal Control can dynamically modify the text.
                     For example, in this file, the title element has a Literal Control, and the text is assigned to it dynamically in the Code Behind File
                     (in the Page_Load method).
                     However, Literal Control is rendered in the same manner as Literal Text (Non Server side html text and elements), i.e. without any 
@@ -37,7 +37,7 @@
                 </asp:Literal><br /><br />
                 <asp:Literal runat="server" Mode="Transform">
                     <b>Literal Control with Transform Mode</b><br />
-                    On the other hand Literal Control is again the same thing as Literal Text with one property that it can dynamically modify the text.
+                    On the other hand Literal Control can dynamically modify the text.
                     For example, in this file, the title element has a Literal Control, and the text is assigned to it dynamically in the Code Behind File
                     (in the Page_Load method).
                     However, Literal Control is rendered in the same manner as Literal Text (Non Server side html text and elements), i.e. without any 
