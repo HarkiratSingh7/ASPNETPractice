@@ -4,8 +4,8 @@ without any tags is considered as **Literal Control**.
 For example the title of this html document is actually treated as a Literal Text 
 (LiteralControl is the .NET class handling Literal Texts).
 <br/><br/>On the other hand Literal Control is again the same thing as Literal Text 
-(actually Literal Text is a Literal Control) with one property that it can 
-dynamically modify the text (i.e. using Control ID in the C# Code).
+***(actually Literal Text is of System.Web.UI.WebControls.Literal class and Literal Control is of System.Web.UI.LiteralControl)*** with one property that it can 
+dynamically modify the text (i.e. using Control ID in the C# Code) according to some specified mode of operation.
 However, Literal Control is rendered in the same manner as Literal Text (Non Server 
 side html text and elements), i.e. without any **&lt;span&gt;&lt;/span&gt;** tag.
 
