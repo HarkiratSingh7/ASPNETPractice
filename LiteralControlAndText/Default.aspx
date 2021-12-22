@@ -13,8 +13,9 @@
                 Literal Text, Literal Control and the Label Control
             </asp:Label>
             <div>
-                Each HTML control not using the runat="server" attribute and each text appearing without any tags is considered as Literal Control and Literal Text respectively.
-                For example the title of this html document will be treated as a Literal Text if not wrapped inside Literal Control, otherwise it is a LiteralControl.
+                Each HTML control not using the runat="server" attribute and each text appearing without any tags is considered as Literal (System.Web.UI.LiteralControl class).
+                For example the title of this html document will be treated as a Literal (System.Web.UI.LiteralControl class) if not wrapped inside Literal Control, otherwise 
+                it is a Literal Control (of System.Web.UI.WebControls.Literal class).
                 <br /><br />
                 <asp:Literal runat="server" Mode="Encode">
                     <b>Literal Control with Encode Mode</b><br />
