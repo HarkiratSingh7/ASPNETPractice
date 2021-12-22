@@ -1,10 +1,16 @@
 ﻿### Literal Text, Literal Control and the Label Control
-Each HTML control not using the **runat="server"** attribute and each text appearing 
-without any tags is considered as **Literal Control**.
-For example the title of this html document is actually treated as a Literal Text 
-(LiteralControl is the .NET class handling Literal Texts).
-<br/><br/>On the other hand Literal Control is again the same thing as Literal Text 
-***(actually Literal Control is of System.Web.UI.WebControls.Literal class and Literal Element or Text (non server side HTML) is of System.Web.UI.LiteralControl. It is quite confusing but LiteralControl belongs to Literal class and any other non server side element in html page render part of the web forms is handled by LiteralControl class.)*** with one property that it can  dynamically modify the text (i.e. using Control ID in the C# Code) according to some specified mode of operation.
+Each HTML control not using the **runat="server"** attribute (like &lt;div&gt; tag) 
+and each text appearing without any tags is considered as **Literal Control 
+(System.Web.UI.LiteralControl class)**.
+<br/><br/>On the other hand Literal Web Control is again the same thing as Literal 
+Text ***(actually Literal Control is of System.Web.UI.WebControls.Literal class 
+and Literal Element or Text (non server side HTML) is of 
+System.Web.UI.LiteralControl. It is quite confusing but Literal Control belongs to 
+Literal class and any other non server side element (except html, head, body etc 
+tags) in html page render part of the web forms is handled by 
+System.Web.UI.LiteralControl class.)*** with one property that it can 
+dynamically modify the text (i.e. using Control ID in the C# Code) according to 
+some specified mode of operation.
 However, Literal Control is rendered in the same manner as Literal Text (Non Server 
 side html text and elements), i.e. without any **&lt;span&gt;&lt;/span&gt;** tag.
 
