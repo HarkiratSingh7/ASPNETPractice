@@ -68,6 +68,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.aspx" />
+    <Content Include="Screenshots\Screenshot1.png" />
+    <Content Include="Screenshots\Screenshot2.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
