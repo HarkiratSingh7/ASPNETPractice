@@ -12,6 +12,11 @@ This class overrides the method
         
         protected override bool EvaluateIsValid()
 
+To include this custom user control the following directive was added to the 
+webforms file
+
+    <%@ Register Namespace="CustomControls" TagPrefix="custom" %>
+
 More details can be seen in this file 
 [App_Code/PlainTextValidator.cs](App_Code/PlainTextValidator.cs).
 
