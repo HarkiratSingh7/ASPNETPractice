@@ -83,6 +83,9 @@
     <Content Include="Home.aspx" />
     <Content Include="Manage\Add.aspx" />
     <Content Include="Manage\Edit.aspx" />
+    <Content Include="Screenshots\ss1.png" />
+    <Content Include="Screenshots\ss2.png" />
+    <Content Include="Screenshots\ss3.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -122,6 +125,7 @@
   <ItemGroup>
     <Content Include="MasterPage.Master" />
     <Content Include="App_Themes\MyTheme\MyTheme.skin" />
+    <Content Include="Readme.md" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -129,6 +133,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
