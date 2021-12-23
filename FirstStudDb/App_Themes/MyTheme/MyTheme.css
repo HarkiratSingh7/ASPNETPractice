@@ -1,0 +1,15 @@
+﻿* {
+    font-family: Consolas;
+}
+
+.MyButton {
+    padding: 14px;
+    background-color: #ebe6f8;
+}
+
+.TitleLabel {
+    margin-top:30px;
+    padding-top:15px;
+    font-size:2em;
+    font-weight: bold;
+}
