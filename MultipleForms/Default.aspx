@@ -4,21 +4,22 @@
 
     protected void FormButton_Click(object sender, CommandEventArgs e)
     {
-        switch (e.CommandArgument)
-        {
-            case "Reg":
-                if (Page.IsValid)
-                    lblRegResult.Text = "Registration Successful";
-                else
-                    lblRegResult.Text = "Registration Failed";
-                break;
-            case "Log":
-                if (Page.IsValid)
-                    lblLogResult.Text = "Login Successful";
-                else
-                    lblLogResult.Text = "Login Failed";
-                break;
-        }
+        if (e.CommandName == "FormSubmit")
+            switch (e.CommandArgument)
+            {
+                case "Reg":
+                    if (Page.IsValid)
+                        lblRegResult.Text = "Registration Successful";
+                    else
+                        lblRegResult.Text = "Registration Failed";
+                    break;
+                case "Log":
+                    if (Page.IsValid)
+                        lblLogResult.Text = "Login Successful";
+                    else
+                        lblLogResult.Text = "Login Failed";
+                    break;
+            }
     }
 </script>
 
