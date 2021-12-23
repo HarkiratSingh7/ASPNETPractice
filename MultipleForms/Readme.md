@@ -18,5 +18,8 @@ their respective attributes.
 ### Project Structure
 The main file of this project is [Default.aspx](Default.aspx).
 
+### Screenshots
+Screenshots are added to the [Screenshots](/MultipleForms/Screenshots/) folder.
+
 ##### References
 1. Stephen Walther et al, ASP.NET 4 Unleashed, First Printing, September 2010.
