@@ -4,7 +4,7 @@ custom user defined validator named PlainTextValidator.
 
 #### PlainTextValidator
 It is a custom user control which validates that the text should only contain 
-plain text (alphabets and numbers). It is a simple C# class inheriting System.Web.WebControls.BaseValidator class. 
+plain text (alphabets and numbers). It is a simple C# class inheriting **System.Web.WebControls.BaseValidator** class. 
 This class should be placed inside **App_Code** folder and in the file properties 
 of Visual Studio - select **Build Action** to None.
 
