@@ -10,7 +10,7 @@ of Visual Studio - select **Build Action** to None.
 
 This class overrides the method 
         
-        protected override bool EvaluateIsValid()
+    protected override bool EvaluateIsValid()
 
 To include this custom user control the following directive was added to the 
 webforms file
