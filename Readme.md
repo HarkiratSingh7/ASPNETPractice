@@ -10,3 +10,4 @@ C# is the language I chose for implementing the logic.
 3. [Input Controls, Post Backs and View States](/UserInputControls/)
 4. [Multiple Forms, Validation Groups and Button Commands](/MultipleForms/)
 5. [Advanced Validators](/AdvancedValidation/)
+6. [Student Registration Web Form](/FirstStudDb/)
