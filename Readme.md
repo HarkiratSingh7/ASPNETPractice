@@ -9,4 +9,4 @@ C# is the language I chose for implementing the logic.
 2. [Literal Text, Literal Control and the Label Control](/LiteralControlAndText/)
 3. [Input Controls, Post Backs and View States](/UserInputControls/)
 4. [Multiple Forms, Validation Groups and Button Commands](/MultipleForms/)
-5. [AdvancedValidators](/AdvancedValidation/)
+5. [Advanced Validators](/AdvancedValidation/)
