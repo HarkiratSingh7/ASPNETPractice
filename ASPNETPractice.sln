@@ -20,6 +20,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvancedValidation", "Advan
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstStudDb", "FirstStudDb\FirstStudDb.csproj", "{062415AA-4648-456A-851D-0F7857393888}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmpManagement", "EmpManagement\EmpManagement.csproj", "{0B86D041-DBCC-4A72-9B59-25A84B4148C1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -50,6 +52,10 @@ Global
 		{062415AA-4648-456A-851D-0F7857393888}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{062415AA-4648-456A-851D-0F7857393888}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{062415AA-4648-456A-851D-0F7857393888}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B86D041-DBCC-4A72-9B59-25A84B4148C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B86D041-DBCC-4A72-9B59-25A84B4148C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B86D041-DBCC-4A72-9B59-25A84B4148C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B86D041-DBCC-4A72-9B59-25A84B4148C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
