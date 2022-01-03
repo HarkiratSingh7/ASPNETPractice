@@ -17,8 +17,9 @@ namespace EmpManagement.App_Code.Services
             connStr = WebConfigurationManager.ConnectionStrings["DBConnectionStr"].ConnectionString;
         }
 
-        public static void Delete(int id)
+        public static void Delete(Employee employee)
         {
+            var id = employee.Id;
             var connection = new SqlConnection(connStr);
             var command = new SqlCommand("DELETE FROM EMPLOYEES WHERE ID = @ID", connection);
             command.Parameters.AddWithValue("ID", id);
@@ -50,8 +51,8 @@ namespace EmpManagement.App_Code.Services
         public static void Insert(Employee employee)
         {
             var connection = new SqlConnection(connStr);
-            var command = new SqlCommand("INSERT INTO EMPLOYEES VALUES(@ID, @NAME, @ROLE, @ADDRESS, @JOINED, @DEPARTMENT_ID)", connection);
-            command.Parameters.AddWithValue("ID", GetNumberOfEmployees() + 1);
+            var command = new SqlCommand("INSERT INTO EMPLOYEES(NAME, ROLE, ADDRESS, JOINED, DEPARTMENT_ID) " +
+                "VALUES(@NAME, @ROLE, @ADDRESS, @JOINED, @DEPARTMENT_ID)", connection);
             command.Parameters.AddWithValue("NAME", employee.Name);
             command.Parameters.AddWithValue("ROLE", employee.Role);
             command.Parameters.AddWithValue("ADDRESS", employee.Address);
@@ -62,21 +63,6 @@ namespace EmpManagement.App_Code.Services
                 connection.Open();
                 command.ExecuteNonQuery();
             }
-        }
-
-        public static int GetNumberOfEmployees()
-        {
-            var connection = new SqlConnection(connStr);
-            var command = new SqlCommand("SELECT Count(*) FROM EMPLOYEES", connection);
-            int count = 0;
-            using (connection)
-            {
-                connection.Open();
-                SqlDataReader reader = command.ExecuteReader();
-                reader.Read();
-                count = reader.GetInt32(0);
-            }
-            return count;
         }
 
         public static List<Employee> GetAll()

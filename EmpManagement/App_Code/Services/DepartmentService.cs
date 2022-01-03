@@ -17,8 +17,9 @@ namespace EmpManagement.App_Code.Services
             connStr = WebConfigurationManager.ConnectionStrings["DBConnectionStr"].ConnectionString;
         }
 
-        public static void Delete(int id)
+        public static void Delete(Department department)
         {
+            var id = department.Id;
             var connection = new SqlConnection(connStr);
             var command = new SqlCommand("DELETE FROM DEPARTMENTS WHERE ID = @ID", connection);
             command.Parameters.AddWithValue("ID", id);
@@ -46,8 +47,8 @@ namespace EmpManagement.App_Code.Services
         public static void Insert(Department department)
         {
             var connection = new SqlConnection(connStr);
-            var command = new SqlCommand("INSERT INTO DEPARTMENTS VALUES(@ID, @NAME, @DESCRIPTION)", connection);
-            command.Parameters.AddWithValue("ID", GetNumberOfDepartments() + 1);
+            var command = new SqlCommand("INSERT INTO DEPARTMENTS(NAME, DESCRIPTION) " +
+                "VALUES(@NAME, @DESCRIPTION)", connection);
             command.Parameters.AddWithValue("NAME", department.Name);
             command.Parameters.AddWithValue("DESCRIPTION", department.Description);
             using (connection)
@@ -55,21 +56,6 @@ namespace EmpManagement.App_Code.Services
                 connection.Open();
                 command.ExecuteNonQuery();
             }
-        }
-
-        public static int GetNumberOfDepartments()
-        {
-            var connection = new SqlConnection(connStr);
-            var command = new SqlCommand("SELECT Count(*) FROM DEPARTMENTS", connection);
-            int count = 0;
-            using (connection)
-            {
-                connection.Open();
-                SqlDataReader reader = command.ExecuteReader();
-                reader.Read();
-                count = reader.GetInt32(0);
-            }
-            return count;
         }
 
         public static Department GetDepartmentById(int id)
