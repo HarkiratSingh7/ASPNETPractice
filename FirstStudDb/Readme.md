@@ -29,7 +29,7 @@ ASP.NET provides a data source control called **SqlDataSource** control, which h
 
 The following is a code example taken from [Home.aspx](Home.aspx)
 
-```aspnet
+```asp.net
 <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
 ConnectionString="<%$ ConnectionStrings:FirstStudentDatabaseConnectionString %>" 
 SelectCommand="SELECT DEPARTMENTS.DEPARTMENT_NAME, STUDENTS.ROLLNO, 
@@ -39,7 +39,6 @@ STUDENTS.DEPARTMENT = DEPARTMENTS.DEPTID">
 </asp:SqlDataSource>
 ```
 
-<br/>
 
 ##### Insertion using SqlDataSource Control
 
@@ -47,7 +46,7 @@ Insertion Parameters can be specified inside the SqlDataSource Control. It can b
 
 The following code of [Add.aspx](/FirstStudDb/Manage/Add.aspx) shows the use of control parameters.
 
-```aspnet
+```asp.net
 <asp:SqlDataSource ID="StudentDataSource" runat="server"
         ConnectionString="<%$ ConnectionStrings:FirstStudentDatabaseConnectionString %>"
         InsertCommand="INSERT INTO [STUDENTS] ([ROLLNO], [STUDENT_NAME]
@@ -70,7 +69,7 @@ The following code of [Add.aspx](/FirstStudDb/Manage/Add.aspx) shows the use of 
 
 The following code of [Edit.aspx](/FirstStudDb/Manage/Edit.aspx) shows the use of bound fields of a details view control as parameters.
 
-```aspnet
+```asp.net
 <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
         ConnectionString="<%$ ConnectionStrings:FirstStudentDatabaseConnectionString %>" 
         DeleteCommand="DELETE FROM [STUDENTS] WHERE [ROLLNO] = @ROLLNO" 
@@ -109,7 +108,7 @@ The following code of [Edit.aspx](/FirstStudDb/Manage/Edit.aspx) shows the use o
     </asp:SqlDataSource>
 ```
 
-<br/>
+
 
 #### Using SqlDataSource Control in other Controls
 
@@ -117,7 +116,7 @@ SqlDataSource control should be used to provide data to other data controls like
 
 The following piece of code taken from [Edit.aspx](/FirstStudDb/Manage/Edit.aspx) demonstrates how to use SqlDataSource control with a DetailsView control.
 
-```aspnet
+```asp.net
 <asp:DetailsView ID="DetailsView1" runat="server" 
     AutoGenerateRows="False" CellPadding="4" DataKeyNames="ROLLNO" 
     DataSourceID="SqlDataSource1" OnItemDeleted="DetailsView1_ItemDeleted" 
@@ -136,7 +135,7 @@ The following piece of code taken from [Edit.aspx](/FirstStudDb/Manage/Edit.aspx
 
 Similarly, SqlDataSource control can be used for GridView control as done in [Home.aspx](Home.aspx) file.
 
-<br/>
+
 
 #### Project Structure
 
