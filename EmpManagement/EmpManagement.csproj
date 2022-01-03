@@ -84,6 +84,11 @@
     <Content Include="Departments\Index.aspx" />
     <Content Include="Employees\Create.aspx" />
     <Content Include="Employees\Index.aspx" />
+    <Content Include="Screenshots\ss1.png" />
+    <Content Include="Screenshots\ss2.png" />
+    <Content Include="Screenshots\ss3.png" />
+    <Content Include="Screenshots\ss4.png" />
+    <Content Include="Screenshots\ss5.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -103,6 +108,7 @@
   <ItemGroup>
     <Content Include="MasterPage.Master" />
     <None Include="packages.config" />
+    <Content Include="Readme.md" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
